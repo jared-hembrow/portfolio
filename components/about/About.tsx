@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import config from "../../next.config";
 const About = () => {
 	return (
 		<div id="about" className="about-container">
@@ -8,7 +8,7 @@ const About = () => {
 				<div className="about-content-image">
 					<Image
 						className="about-avatar"
-						src={"/assets/main/me.jpg"}
+						src={`${config.basePath}/assets/main/me.jpg`}
 						alt={`Cover Image`}
 						width={1536}
 						height={1651}

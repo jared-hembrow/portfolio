@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React, { FC } from "react";
-import cn from "classnames";
 import Link from "next/link";
 import { Icon } from "semantic-ui-react";
-
+import config from "../../next.config";
 const Home: FC = () => {
 	const onGoTobout = () => {
 		if (typeof window === "undefined") return;
@@ -31,7 +30,7 @@ const Home: FC = () => {
 			</div>
 			<Image
 				className="home-image"
-				src={"/assets/main/dark-laptop-code.jpg"}
+				src={`${config.basePath}/assets/main/dark-laptop-code.jpg`}
 				alt={`Cover Image`}
 				width={1300}
 				height={630}
@@ -51,7 +50,7 @@ const Home: FC = () => {
 					<Link href={"https://github.com/jared-hembrow"}>
 						<Image
 							className="logo"
-							src={"/assets/main/github-logo.png"}
+							src={`${config.basePath}/assets/main/github-logo.png`}
 							alt={`Cover Image`}
 							//   className={cn('shadow-sm w-full', {
 							//     'hover:shadow-lg transition-shadow duration-200': slug,
@@ -65,7 +64,7 @@ const Home: FC = () => {
 					<Link href={"https://www.linkedin.com/in/jared-hembrow-21b786212"}>
 						<Image
 							className="logo"
-							src={"/assets/main/linkedin-logo.png"}
+							src={`${config.basePath}/assets/main/linkedin-logo.png`}
 							alt={`Cover Image`}
 							//   className={cn('shadow-sm w-full', {
 							//     'hover:shadow-lg transition-shadow duration-200': slug,
