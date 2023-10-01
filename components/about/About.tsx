@@ -16,8 +16,11 @@ const About = () => {
 				</div>
 				<div className="about-content-text-container">
 					<p className="about-content-text">
-						I am a full stack web developer with 2 years of experience working
-						in a israeli start up
+						Drawing from a rich background as a self-taught full-stack web
+						developer, I bring 2 years of hands-on experience gained while
+						working in an Israeli startup. Prior to my web development journey,
+						I spent a decade as a skilled welder, further contributing to my
+						versatile skill set.
 					</p>
 				</div>
 			</div>
