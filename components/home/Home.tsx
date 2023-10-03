@@ -18,7 +18,7 @@ const Home: FC = () => {
 	return (
 		<div className="home-container">
 			<div className="home-navbar-container">
-				<div className="home-navbar-item">
+				<div className="home-navbar-item" onClick={onGoTobout}>
 					<p className="home-navbar-item-text">About</p>
 				</div>
 				<div className="home-navbar-item">
@@ -36,15 +36,21 @@ const Home: FC = () => {
 				height={630}
 			/>
 			<div className="home-header-title">
-				<h1 className="home-header home-header-title-text">
-					{"Hello, my name is Jared."}
-				</h1>
+				<div className="home-header-title-content">
+					<div>
+						<h1 className="home-header home-header-title-text">
+							{"Hello, my name is Jared."}
+						</h1>
+					</div>
+					<div>
+						<h2 className="home-header home-header-title-sub-text">
+							{"I build full stack web applications"}
+						</h2>
+					</div>
+				</div>
 			</div>
-			<div className="home-header-description">
-				<h2 className="home-header home-header-description-text">
-					{"I build full stack web applications"}
-				</h2>
-			</div>
+			{/* <div className="home-header-description">
+			</div> */}
 			<ul className="home-follow-me-list">
 				<li className="home-follow-me-list-item">
 					<Link href={"https://github.com/jared-hembrow"}>

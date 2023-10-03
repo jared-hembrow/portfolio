@@ -1,9 +1,22 @@
 import Image from "next/image";
 import React from "react";
+import { Icon } from "semantic-ui-react";
 import config from "../../next.config";
 const About = () => {
 	return (
 		<div id="about" className="about-container">
+			{/* <div className="html-tag-main-open html-tag-main">{"<section>"}</div>
+			<div className="html-tag-main-close html-tag-main">{"</section>"}</div> */}
+			{/* <Icon
+				size="massive"
+				className="about-angle-left-icon"
+				name="angle left"
+			/>
+			<Icon
+				size="massive"
+				className="about-angle-right-icon"
+				name="angle right"
+			/> */}
 			<div className="about-content-container">
 				<div className="about-content-image">
 					<Image

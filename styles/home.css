@@ -12,8 +12,6 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding-right: 10vh;
-    /* background-color: black; */
 
 }
 .home-navbar-item {
@@ -61,24 +59,28 @@
 .home-learn-more-icon:hover {
     transform: scale(1.4);
 }
+
+
+/* Center header - text in center of page */
 .home-header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .home-header-title {
-    /* Font */
-    font-size: 2.1rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px black;
-    color: white;
-    /* color: #b1b1b1; */
-    letter-spacing: 1.3px;
     /* Positioning */
     position: absolute;
     top: 44vh;
     width: 100%;
+    padding: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* text-align: center; */
+    align-items: center;
+}
+.home-header-title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .home-header-title-text {
     /* Font */
@@ -86,38 +88,38 @@
     font-weight: bold;
     text-shadow: 1px 1px 3px black;
     color: white;
-    /* color: #b1b1b1; */
     letter-spacing: 1.3px;
-    /* Positioning */
-    width: 45%;
+
 }
-.home-header-description {
+.home-header-title-sub-text {
     font-size: 1.3rem;
     font-weight:600;
     text-shadow: 1px 1px 3px black;
-    /* color: #b1b1b1; */
     color: white;
-    /* Positioning */
-    position: absolute;
-    top: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
 }
-.home-header-description-text {
-    font-size: 1.3rem;
-    font-weight:600;
-    text-shadow: 1px 1px 3px black;
-    /* color: #b1b1b1; */
-    color: white;
-    /* Positioning */
-    width: 45%;
+/* Media query for phones or screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+    .home-header-title {
+        /* Positioning */
+        top: 36vh;
+    }
+    .home-header-title-text {
+        /* Font */
+        font-size: 1.5rem !important;
+        letter-spacing: 1.3px;
+    
+    }
+    .home-header-title-sub-text {
+        font-size: 1rem !important;
+       
+    
+    }
+  }
+/* ==================================================== */
 
-}
 
-
-/* Follow me list */
+/* Follow me list - links(icons) to social media */
 ul {
     list-style: none; /* Remove bullets */
   }
@@ -151,4 +153,23 @@ ul {
 }
 .home-follow-me-list-item:hover {
     width: 70px
+}
+/* Media query for phones or screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 40px;
+        height: 40px
+    }
+    .home-follow-me-list {
+        width: 85px;
+    }
+    
+    .home-follow-me-list-item {
+        width: 50px;
+        height: 50px;
+    }
+    .home-follow-me-list-item:hover {
+        width: 70px
+    }
+
 }
