@@ -1,0 +1,33 @@
+.projects-container {
+    position: relative;
+    width: 100vw;
+    height: 102vh;
+    /* background-color: var(--dark-blue); */
+    background-color: royalblue;
+    opacity: 0.9;
+    padding: 20px;
+}
+
+
+.projects-list-container {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-list-item {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+
+
+.projects-description-container {
+    color: white;
+    /* background-color: blue; */
+    width: calc(100vw - 40px);
+    padding: 20px
+}

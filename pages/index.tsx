@@ -1,4 +1,4 @@
-import { Layout, Home, About } from "../components";
+import { Layout, Home, About, Projects } from "../components";
 import Head from "next/head";
 
 export default function Index() {
@@ -11,6 +11,7 @@ export default function Index() {
 				<>
 					<Home />
 					<About />
+					<Projects />
 				</>
 			</Layout>
 		</>
