@@ -1,0 +1,94 @@
+.testimonials-container {
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 10vw 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.exp-container {
+    background: linear-gradient(150deg, #010711, #021b3e, #0a2140, #475d7d);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* exp job */
+.job-container {
+    color: white;
+}
+.job-container > div {
+    margin: 5px;
+}
+.job-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.job-time-period {
+    color: rgb(186, 186, 186);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.job-description {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Testimonials */
+.testimonials-items {
+    display: flex;
+}
+.testimonial-person-container {
+   border: 2px solid black;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px 2px rgb(85, 85, 85);
+   background: linear-gradient(150deg, #010711, #021b3e, #0a2140, #475d7d);
+   display: flex;
+   
+   padding: 5px;
+    
+}
+
+.testimonial-person-avatar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px
+}
+.testimonial-person-avatar-image {}
+
+.testimonial-person-content {}
+
+.testimonial-person-content-name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    line-height: 2.1rem;
+    
+}
+.testimonial-person-content-position {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(189, 189, 189);
+    margin-bottom: 15px;
+}
+.testimonial-person-content-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Media query for phones or screens with a max-width of 767px */
+@media screen and (max-width: 767px) {
+/* Testimonials */
+.testimonials-items {
+    display: flex;
+    flex-direction: column;
+}
+}

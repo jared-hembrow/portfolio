@@ -33,7 +33,7 @@
 
 .about-content-container-border {
     position: absolute;    
-    width: 80%;
+    width: 85%;
     height: 60%;
     left: 6vw;
     top: 10vh;
@@ -43,11 +43,10 @@
     border-top-left-radius: 15px;
     
 }
-
 .about-content-container {
     position: absolute;    
     width: 100%;
-    height: 100%;
+    height: 80vh;
     left: 0;
     top: 0;
     border-top: 8px solid rgb(0, 0, 0);
@@ -58,26 +57,27 @@
     background: linear-gradient(150deg, #010711, #021b3e, #0a2140, #475d7d);
     box-shadow: 3px 3px 5px  #2f38448f;
 }
-
 .about-content-image {
     position: absolute;
     top: 6vh;
     left: 5vw;
 }
-
 .about-content-text-container {
     position: absolute;
     left: calc(8vw + 10px + 20vw);
     top: 10vh;
     padding: 15px;
-}
 
+}
 /* Media query for phones or screens with a max-width of 767px */
 @media screen and (max-width: 767px) {
     .about-content-container {
         width: 100%;
+        
     }
-
+    .about-content-text {
+        font-size: 15px !important ;
+    }
 }
 .about-content-text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -86,5 +86,4 @@
     font-weight: 600;
     letter-spacing: 1.1px;
     text-shadow: 1px 1px 1px black;
-
 }

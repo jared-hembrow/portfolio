@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Icon } from "semantic-ui-react";
 import config from "../../next.config";
 const Home: FC = () => {
-	const onGoTobout = () => {
+	const onGoToAbout = () => {
 		if (typeof window === "undefined") return;
 		const about = document.getElementById("about");
 		const rect = about.getBoundingClientRect();
@@ -15,13 +15,24 @@ const Home: FC = () => {
 			behavior: "smooth", // Optional: Add smooth scrolling animation
 		});
 	};
+	const onGoToExperience = () => {
+		if (typeof window === "undefined") return;
+		const experience = document.getElementById("experience");
+		const rect = experience.getBoundingClientRect();
+
+		console.log();
+		window.scrollTo({
+			top: window.scrollY + rect.top, // Add the current scroll position to the element's top position
+			behavior: "smooth", // Optional: Add smooth scrolling animation
+		});
+	};
 	return (
 		<div className="home-container">
 			<div className="home-navbar-container">
-				<div className="home-navbar-item" onClick={onGoTobout}>
+				<div className="home-navbar-item" onClick={onGoToAbout}>
 					<p className="home-navbar-item-text">About</p>
 				</div>
-				<div className="home-navbar-item">
+				<div className="home-navbar-item" onClick={onGoToExperience}>
 					<p className="home-navbar-item-text">Experience</p>
 				</div>
 				<div className="home-navbar-item">
@@ -81,7 +92,7 @@ const Home: FC = () => {
 					</Link>
 				</li>
 			</ul>
-			<div className="home-learn-more" onClick={onGoTobout}>
+			<div className="home-learn-more" onClick={onGoToAbout}>
 				<p>Learn more about what i do</p>
 				<Icon name="chevron down" className="home-learn-more-icon" />
 			</div>
