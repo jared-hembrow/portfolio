@@ -35,7 +35,7 @@ const Card: FC<CardProps> = ({
         </div>
         <div className={style['card-links']}>
             {links.map(link => {
-                return <div className={style['card-link']}>
+                return <div key={`link-item-${link.linkUrl}`} className={style['card-link']}>
                     <Link href={link.linkUrl}>{link.linkText ? (<div className={style['card-link-text']}>{link.linkText}</div>) : link.icon ? <Icon size="huge" name={link.icon} className={style['card-link-icon']} />  : null}</Link>
                 </div>
             })}

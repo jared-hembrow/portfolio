@@ -32,7 +32,7 @@ const people: PersonTestomonial[] = [
         lifecycle, making me a valuable asset to any project or team.`
     }
 ]
-const empty = []
+const empty:PersonTestomonial[] = []
 const Testimonials = () => {
     return <div id="experience" className="testimonials-container">
         <div className="exp-container">
@@ -49,7 +49,7 @@ const Testimonials = () => {
         <div className="testimonials-items">
 
         {empty.map(item => {
-            return <div className="testimonial-person-container">
+            return <div key={`testimonial-item-${item.name}`} className="testimonial-person-container">
                 <div className="testimonial-person-avatar">
                     {!item.avatar ? null : <Image
 				className="testimonial-person-avatar-image"
