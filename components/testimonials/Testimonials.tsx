@@ -39,8 +39,8 @@ const Testimonials = () => {
             
         
         <div className="job-container">
-            <div className="job-title">Full stack web developer</div>
-            <div className="job-time-period">Dec 2021 - oct 2023</div>
+            <div className="job-title">Pickey - Full Stack Web Developer</div>
+            <div className="job-time-period">2021 - 2023</div>
             <div className="job-description">
             As a Full Stack Web Developer i held a multifaceted position where I played a pivotal role in the end-to-end development of a comprehensive web application. My responsibilities spanned various aspects of the project, including authentication, authorization, API gateway implementation, and the design and development of a sophisticated dynamic SOP (Standard Operating Procedure) rule engine.
             </div>

@@ -36,7 +36,7 @@
     width: 85%;
     height: 60%;
     left: 6vw;
-    top: 10vh;
+    top: 8vh;
     /* border-top: 1px solid white; */
     /* border-top: 1px solid linear-gradient(45deg, #f06, #f06, #333); */
     border-left: 1px solid white;
@@ -86,4 +86,25 @@
     font-weight: 600;
     letter-spacing: 1.1px;
     text-shadow: 1px 1px 1px black;
+}
+
+.about-goto-exp {
+        /* Font */
+        color: rgb(200, 200, 200);
+        text-shadow: 1px 1px 2px black;
+        /* Positioning */
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+}
+.about-goto-exp:hover {
+    cursor: pointer;
+}
+.about-goto-exp-icon {
+    transition: transform 0.5s ease;
+}
+.about-goto-exp-icon:hover {
+    transform: scale(1.4);
 }

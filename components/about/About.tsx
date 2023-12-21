@@ -2,7 +2,19 @@ import Image from "next/image";
 import React from "react";
 // import { Icon } from "semantic-ui-react";
 import config from "../../next.config";
+import { Icon } from "semantic-ui-react";
 const About = () => {
+	const onGoToExperience = () => {
+		if (typeof window === "undefined") return;
+		const experience = document.getElementById("experience");
+		const rect = experience.getBoundingClientRect();
+
+		console.log();
+		window.scrollTo({
+			top: window.scrollY + rect.top, // Add the current scroll position to the element's top position
+			behavior: "smooth", // Optional: Add smooth scrolling animation
+		});
+	}
 	return (
 		<div id="about" className="about-container">
 			{/* <div className="html-tag-main-open html-tag-main">{"<section>"}</div>
@@ -44,6 +56,10 @@ const About = () => {
 						</p>
 					</div>
 				</div>
+			</div>
+			<div className="about-goto-exp" onClick={onGoToExperience}>
+			<p>See what experience i have</p>
+				<Icon name="chevron down" className="about-goto-exp-icon" />
 			</div>
 		</div>
 	);

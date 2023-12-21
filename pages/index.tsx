@@ -12,7 +12,7 @@ export default function Index() {
 					<Home />
 					<About />
 					<Testimonials/>
-					{/* <Projects /> */}
+					<Projects />
 				</>
 			</Layout>
 		</>

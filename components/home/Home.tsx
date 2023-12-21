@@ -26,6 +26,17 @@ const Home: FC = () => {
 			behavior: "smooth", // Optional: Add smooth scrolling animation
 		});
 	};
+	const onGoToProjects = () => {
+		if (typeof window === "undefined") return;
+		const experience = document.getElementById("projects");
+		const rect = experience.getBoundingClientRect();
+
+		console.log();
+		window.scrollTo({
+			top: window.scrollY + rect.top, // Add the current scroll position to the element's top position
+			behavior: "smooth", // Optional: Add smooth scrolling animation
+		});
+	};
 	return (
 		<div className="home-container">
 			<div className="home-navbar-container">
@@ -36,7 +47,7 @@ const Home: FC = () => {
 					<p className="home-navbar-item-text">Experience</p>
 				</div>
 				<div className="home-navbar-item">
-					<p className="home-navbar-item-text">Contact</p>
+					<p className="home-navbar-item-text" onClick={onGoToProjects}>Projects</p>
 				</div>
 			</div>
 			<Image

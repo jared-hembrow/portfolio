@@ -3,14 +3,13 @@
     width: 100vw;
     height: 102vh;
     /* background-color: var(--dark-blue); */
-    background-color: royalblue;
+    /* background-color: royalblue; */
     opacity: 0.9;
     padding: 20px;
 }
 
 
 .projects-list-container {
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -29,5 +28,5 @@
     color: white;
     /* background-color: blue; */
     width: calc(100vw - 40px);
-    padding: 20px
+    /* padding: 20px */
 }
