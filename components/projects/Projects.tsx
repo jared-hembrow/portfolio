@@ -19,7 +19,7 @@ const Projects: FC = () => {
     {
       title: "Dragon Blackjack",
       description:
-        "A discord bot that allows you to enter commands and it will render a game of blackjack inside the text channel",
+        "Discord bot that allows you to enter commands and it will render a game of blackjack inside the text channel",
       imageUrl: `${config.basePath}/assets/main/dragon-blackjack.jpg`,
       links: [
         {
@@ -31,12 +31,28 @@ const Projects: FC = () => {
     {
       title: "Rate My Software",
       description:
-        "a web application using Next.js and NextAuth.js, that allows users to showcase their software projects and receive valuable feedback from other users.",
+        "Web application using Next.js and NextAuth.js, that allows users to showcase their software projects and receive valuable feedback from other users.",
       imageUrl: `${config.basePath}/assets/main/rate-my-software-app.png`,
       links: [
         {
           icon: "github",
           linkUrl: "https://github.com/jared-hembrow/rate-my-software",
+        },
+      ],
+    },
+    {
+      title: "Snakes And Ladders",
+      description:
+        "Multiplayer Snakes and Ladders game! This project is built using Next.js, Tailwind CSS, TypeScript, and Socket.IO to create an interactive and real-time gaming experience. Players can create games and invite others to join using a unique game ID.",
+      imageUrl: `${config.basePath}/assets/main/snakes-and-ladders.png`,
+      links: [
+        {
+          icon: "github",
+          linkUrl: "https://github.com/jared-hembrow/snakes-and-ladders",
+        },
+        {
+          icon: "tablet alternate",
+          linkUrl: "https://snakes-ladders.azurewebsites.net",
         },
       ],
     },
